@@ -1,0 +1,44 @@
+{
+  "moviesDB": [
+    {
+      "viewRatings": "7.6",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
+      "movieName": "Guardians of the Galaxy Vol. 2",
+      "actors": ["Chris Pratt, Zoe Saldana, Dave Bautista"],
+      "description": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.",
+      "genre": ["Action, Adventure, Comedy"]
+    },
+    {
+      "viewRatings": "8.0",
+      "poster": "https://www.imdb.com/title/tt0947798/mediaviewer/rm1503101184/?ref_=tt_ov_i",
+      "movieName": "Black Swan",
+      "actors": ["Natalie Portman", "Mila Kunis", "Vincent Cassel"],
+      "description": "Nina is a talented but unstable ballerina on the verge of stardom. Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare.",
+      "genre": ["Drama", "Thriller"]
+    },
+    {
+      "viewRatings": "8.4",
+      "poster": "https://www.imdb.com/title/tt4154796/mediaviewer/rm2775147008/?ref_=tt_ov_i",
+      "movieName": "Avengers: Endgame",
+      "actors": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+      "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "genre": ["Action", "Adventure", "Drama", "Sci-Fi"]
+    },
+    {
+      "viewRatings": "8.2",
+      "poster": "https://www.imdb.com/title/tt0268978/mediaviewer/rm3910404352/?ref_=tt_ov_i",
+      "movieName": "A Beautiful Mind",
+      "actors": ["Russel Crowe", "Ed Harris", "Jennifer Connelly"],
+      "description": "After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
+      "genre": ["Biography", "Drama"]
+    },
+    {
+      "viewRatings": "8.0",
+      "poster": "https://www.imdb.com/title/tt0317705/mediaviewer/rm915381504/?ref_=tt_ov_i",
+      "movieName": "The Incredibles",
+      "actors": ["Craig T. Nelson", "Samuel L. Jackson", "Holly Hunter"],
+      "description": "While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.",
+      "genre": ["Animation", "Action", "Adventure", "Family"]
+    }
+  ]
+}
