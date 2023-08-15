@@ -1,149 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>FlickPulse - Your Ultimate Movie Experience</title>
-  <style>
-    body {
-      font-family: 'Courier New', sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      box-shadow: 10px 1px 3px;
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./script.js"></script>
+    <title>Flick Pulse -- Your Ultimate Movie Experience</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-title">
+        <h1>&#128514; Flick Pulse</h1>
+      </div>
+    </header>
 
-    header {
-      background-color: #3cc1e9;
-      text-align: center;
-      padding: 20px;
-     
-    }
+    <!-- Main Section -->
+    <!-- Featured Movie -->
+    <section id="featuredMovie">
+      <img src="" alt="" id="featuredPoster" />
+      <div class="featuredOverlay">
+        <h2 id="featuredMovieName">test</h2>
+        <p id="featuredRating">test</p>
+      </div>
+    </section>
 
-    h1 {
-      font-family: 'Impact', sans-serif;
-      color: #ff3333;
-      font-size: 48px;
-      margin: 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      box-shadow: 10px 3px 6px;
-      
-    }
-
-    .movie-card {
-      background-color: #ffffff;
-      box-shadow: 
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow:10px 4px 6px rgba(0, 0, 0, 0.5);
-    
-
-    }
-
-    .movie-title {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      color: #3cc1e9;
-      margin: 0;
-      box-shadow: 10px 4px 6px rbga(0,0,0,0.1);
-    }
-
-    .movie-options {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-      padding: 60px;
-    
-    }
-
-    .button {
-      background-color: #ff3333;
-      
-
-      color: white;
-      padding:10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #ff6666;
-    }
-  </style>
-</head>
-<body> 
-    <script src="./index.js"></script>
-<header>
-  <h1>FlickPulse</h1>
-  <p>Your Ultimate Movie Experience</p>
-</header>
-
-<div class="container">
-    <div class="movie-box"></div>
-    <button class="button" onclick="addMovie">Add Movie</button>
-    
-   
-  </div>
-   <!-- Add more movie cards here -->
-  <div class=":movie-card-1">
-    <h2 class="movie-title"><b>Guardians of the Galaxy Vol. 2</b></h2>
-    <div class="movie-options">
-      
-      <button class="button" onclick="rateMovie('Guardians of the Galaxy Vol. 2')">Rate Movie</button>
+    <!-- Add Movie Form -->
+    <button id="addMovieBtn">Add Movie</button>
+    <div class="hidden" id="movieForm">
+      <div class="form-field">
+        <input type="text" id="posterInput" placeholder="Movie Poster URL" />
+        <input type="text" id="nameInput" placeholder="Movie Name" />
+        <input type="text" id="actorsInput" placeholder="Actors" />
+        <textarea id="descriptionInput" placeholder="Description"></textarea>
+        <input type="text" id="genreInput" placeholder="Genre" />
+        <input type="text" id="ratingInput" placeholder="rating" />
+        <button type="submit" id="saveMovieBtn">Save Movie</button>
+      </div>
     </div>
-  </div>
-  
-  <div class="movie-card-2">
-    <h2 class="movie-title">Black Swan</h2>
-    <div class="movie-options">
-      <button class="button" onclick="rateMovie('Black Swan')">Rate Movie</button>
-    </div>
-    <div class="movie-card-3">
-        <h2 class="movie-title">Avengers: End Game</h2>
-        <div class="movie-options">
-          <button class="button" onclick="rateMovie('Avengers: End Game')">Rate Movie</button>
-     </div>
-     <div class="movie-card-4">
-            <h2 class="movie-title">A Beautiful Mind</h2>
-            <div class="movie-options">
-              <button class="button" onclick="rateMovie('A Beautiful Mind')">Rate Movie</button>
-         </div>
-         <div class="movie-card-5">
-            <h2 class="movie-title">The Incredibles</h2>
-            <div class="movie-options">
-              <button class="button" onclick="rateMovie('The Incredibles')">Rate Movie</button>
-         </div>
 
+    <!-- Horror Genre Row -->
+    <section class="movie-genre" id="horrorMovies">
+      <h1>Horror Movies</h1>
+      <div class="movie-row">
+        <!-- <div class="movie-box">
+          <img src="movie-poster-url.jpg" alt="Movie Name" />
+          <h3 class="movie-title">Movie Name</h3>
+          <p class="movie-rating">Rating</p>
+        </div> -->
+      </div>
+    </section>
 
+    <!-- Animation Genre Row -->
+    <section class="movie-genre" id="animationMovies">
+      <h1>Animation Movies</h1>
+      <div class="movie-row">
+        <!-- Add movies here -->
+      </div>
+    </section>
 
+    <!-- Random Genre Row -->
+    <section class="movie-genre" id="otherGenreMovies">
+      <h1>Other Genre Movies</h1>
+      <div class="movie-row">
+        <!-- Add movies here -->
+      </div>
+    </section>
 
-
-</div>
-
-
-</div>
-
-<script>
-  function addToFavorites(movieTitle) {
-    alert('Added "' + movieTitle + '" to Favorites!');
-  }
-
-  function addToWatchList(movieTitle) {
-    alert('Added "' + movieTitle + '" to WatchList!');
-  }
-
-  function rateMovie(movieTitle) {
-    // You can implement a rating mechanism here
-    alert('Rating "' + movieTitle + '"...');
-  }
-</script>
-
-</body>
+    <!-- Footer-->
+    <footer>&copy; 2013 Jazlin, Jia-Jia, Oliver</footer>
+  </body>
 </html>
