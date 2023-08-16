@@ -1,4 +1,5 @@
-/** @format */
+
+/** @
 
 function addToFavorites(movieTitle) {
   alert('Added "' + movieTitle + '" to Favorites!');
