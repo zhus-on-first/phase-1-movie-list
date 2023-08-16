@@ -1,5 +1,3 @@
-/** @format */
-
 const featuredPoster = document.getElementById("featuredPoster");
 const featuredMovieName = document.getElementById("featuredMovieName");
 const featuredRating = document.getElementById("featuredRating");
@@ -49,17 +47,4 @@ function renderMoviesByGenre(movies, genre, section) {
 
     movieRow.appendChild(movieBox);
   });
-}
-
-function addToFavorites(movieTitle) {
-  alert('Added "' + movieTitle + '" to Favorites!');
-}
-
-function addToWatchList(movieTitle) {
-  alert('Added "' + movieTitle + '" to WatchList!');
-}
-
-function rateMovie(movieTitle) {
-  // You can implement a rating mechanism here
-  alert('Rating "' + movieTitle + '"...');
 }
