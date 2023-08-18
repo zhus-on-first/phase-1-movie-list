@@ -68,7 +68,7 @@ movieFormField.addEventListener("submit", (event) => {
       if (response.ok) {
         renderNewMovie(newMovie);
         movieFormField.reset();
-        alert("Movie added successfully!");
+        alert("Good choice. Movie added successfully!");
       } else {
         alert("Error adding movie. Please try again.");
       }
