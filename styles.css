@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,8 @@ body {
 
 header {
     display: flex;
-    background-color: #FBF8BE;
-    color: #234E70;
+    background-color: #ffffff;
+    color: #333;
     padding: 20px;
 }
 
@@ -20,31 +20,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: px;
-    background-color: #234E70;
+    height: 300px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    gap: 20px;
 }
 
-.featuredOverlay {
-    background-color: #234E70;
-    color: #FBF8BE;
-    padding: 10px;
-    opacity: 1
+/* Add a movie button and form */
+
+.add-movie {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 black,
+        0 10px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 300px;
+    bottom: 20px;
+    right: 20px;
 }
 
-/* Add a movie button and form styles */
-
-button#addMovieBtn {
-    background-color: #CD5C5C;
+#addMovieBtn {
+    background-color: #444;
     color: white;
     font-size: 24px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-button#addMovieBtn:hover {
-    background-color: #FBF8BE;
-    color:#234E70
 }
 
 .hidden {
@@ -70,9 +72,18 @@ button#addMovieBtn:hover {
 
 #saveMovieBtn {
     font-size: 18px;
+    color: #ffffff;
+    background-color: #404f3d;
 }
 
 /* Movie genre section styles */
+
+.genre-title {
+    display: flex;
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 20px;
+}
 
 .movie-genre {
     display: flex;
@@ -87,14 +98,17 @@ button#addMovieBtn:hover {
 }
 
 .movie-box {
-    width: 200px;
-    height: 300px;
-    padding: 10px;
-    border: 1px solid #ffffff;
-    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 200px;
+    height: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 
 }
 
